@@ -1,91 +1,139 @@
+:::writing{variant="document" id="61427" title="Privacy Policy — WhatsApp Privacy Guard"}
 # Privacy Policy — WhatsApp Privacy Guard
 
-**Last Updated:** August 19, 2026
+**Last Updated: August 19, 2026**
 
 ## 1. Overview
 
 WhatsApp Privacy Guard is a Microsoft Edge browser extension designed to help users protect their privacy while using WhatsApp Web.
 
-The extension provides visual privacy features such as blurring profile pictures, contact names, message previews, conversation messages, and media on WhatsApp Web.
+The extension applies visual blur effects to selected content displayed on WhatsApp Web, including profile pictures, contact names, message previews, conversation messages, and media.
 
-## 2. Information the Extension Accesses
+WhatsApp Privacy Guard is designed with a local-first approach. WhatsApp content is processed within the user's browser and is not intentionally transmitted to the developer or to external servers.
 
-To provide its privacy features, WhatsApp Privacy Guard operates on WhatsApp Web and may access content displayed on the WhatsApp Web page, including:
+## 2. Local Processing
+
+WhatsApp Privacy Guard processes WhatsApp Web content locally within the browser to provide its privacy and blur features.
+
+The extension does not use an external server to process WhatsApp messages or other WhatsApp Web content.
+
+The extension does not use external AI services, analytics services, advertising trackers, or remote processing services.
+
+Message classification, including the optional Smart Message feature, is performed locally using a deterministic pattern-based detection system.
+
+## 3. Information Accessed
+
+To provide its functionality, the extension operates only on WhatsApp Web.
+
+Depending on the user's enabled settings, the extension may process content displayed on WhatsApp Web, including:
 
 - Profile pictures
 - Contact and group names
 - Message previews
-- Conversation messages
-- Images and other media displayed in conversations
+- Conversation message text
+- Images and videos displayed in conversations
 
-The extension processes this information locally in the browser to apply the configured visual privacy protections.
+This information is processed in the browser to apply visual blur effects.
 
-## 3. Keyword Matching
+## 4. Smart Message Detection
 
-The extension can use configured romantic-related keywords to identify certain message previews that should be blurred.
+The Smart Message feature can locally analyze message previews and conversation text for predefined romantic expressions, words, nicknames, and emojis.
 
-Keyword matching is performed locally within the WhatsApp Web page.
+The detection system operates within the browser.
 
-The extension does not send these messages or matched content to an external server.
+Message content used for detection is not intentionally sent to the developer, an external server, an external API, or an external analytics service.
 
-## 4. Data Storage
+## 5. Data Storage
 
-The extension stores user settings using the browser's extension storage system (`chrome.storage.sync`).
+The extension uses the browser's `chrome.storage.sync` API to store user preferences.
 
-These settings may include the user's configured privacy and blur preferences.
+The stored preferences include:
 
-The extension does not maintain a separate external database for user information.
+- `blurProfile`
+- `blurName`
+- `blurMessage`
+- `blurConversation`
+- `blurIntensity`
 
-## 5. Data Transmission
+These values are configuration settings used to remember the user's selected privacy preferences.
 
-WhatsApp Privacy Guard does not operate its own external server or API for collecting or transmitting WhatsApp content.
+WhatsApp message content, profile pictures, contact names, conversation history, or media are not stored by the extension.
 
-The extension does not intentionally send profile pictures, names, messages, message previews, or media to the developer or to an external service.
+## 6. Data Transmission
 
-## 6. Analytics and Tracking
+WhatsApp Privacy Guard does not intentionally transmit WhatsApp message content, contact names, profile pictures, conversation content, or media to the developer or to external servers.
 
-WhatsApp Privacy Guard does not use analytics or advertising tracking services.
+The extension does not operate its own backend server or database for collecting WhatsApp content.
 
-The extension does not track users' browsing activity outside the functionality required to operate on WhatsApp Web.
+## 7. Analytics, Advertising, and Tracking
 
-## 7. Data Sharing and Sale
+WhatsApp Privacy Guard does not use:
 
-We do not sell, rent, or share users' personal information with third parties.
+- Analytics services
+- Advertising networks
+- Advertising trackers
+- User activity tracking services
+- External data collection services
 
-The extension is designed to process WhatsApp Web content locally in the browser for the purpose of providing its privacy features.
+The extension does not intentionally track users' browsing activity outside the functionality required to operate on WhatsApp Web.
 
 ## 8. Permissions
 
-The extension requires access to WhatsApp Web in order to provide its privacy features.
+The extension requests the following permissions:
 
-It uses browser storage functionality to save user preferences.
+### Storage
 
-These permissions are used only for the functionality of the extension.
+The `storage` permission is used to save the user's privacy and blur preferences.
 
-## 9. Data Security
+### WhatsApp Web Access
 
-Because the extension does not use an external server to collect WhatsApp content, the extension does not maintain a developer-controlled database of users' WhatsApp messages or media.
+The extension operates on:
 
-Users should also understand that WhatsApp Web itself is a separate service and is governed by WhatsApp's own privacy practices and policies.
+`https://web.whatsapp.com/*`
+
+This access is required to apply the privacy and blur functionality to WhatsApp Web content.
+
+The extension does not request access to unrelated websites.
+
+## 9. Data Sharing and Sale
+
+We do not sell, rent, or intentionally share users' WhatsApp content or personal information with third parties.
+
+The extension is designed to process WhatsApp Web content locally in the browser rather than sending that content to an external service.
 
 ## 10. Third-Party Services
 
-WhatsApp Privacy Guard does not integrate with external analytics, advertising, or data-processing services for the purpose of collecting user information.
+WhatsApp Privacy Guard does not rely on external APIs, AI services, analytics platforms, advertising services, or external databases to provide its core functionality.
 
-## 11. Changes to This Privacy Policy
+## 11. Security and Privacy Design
 
-This Privacy Policy may be updated when the extension's functionality or privacy practices change.
+WhatsApp Privacy Guard follows a local-first privacy design:
 
-Any updated version will be published in this GitHub repository.
+**WhatsApp Web → Edge Extension → Local browser processing → Visual blur**
 
-## 12. Contact
+There is no developer-controlled server involved in processing WhatsApp content.
 
-For questions regarding this Privacy Policy or the extension, users may use the GitHub repository where this Privacy Policy is published.
+However, users should understand that Microsoft Edge, WhatsApp Web, and other browser or platform services are separate services governed by their own policies and practices.
 
-## 13. Non-Affiliation
+## 12. Changes to This Privacy Policy
 
-WhatsApp Privacy Guard is an independent browser extension and is not affiliated with, sponsored by, or endorsed by WhatsApp or Meta Platforms, Inc.
+This Privacy Policy may be updated if the extension's functionality, permissions, or data practices change.
+
+The latest version of this Privacy Policy will be published in this repository.
+
+## 13. Contact
+
+For questions or feedback regarding WhatsApp Privacy Guard or this Privacy Policy, users may contact the developer through the Microsoft Edge Add-ons support channels or the project's GitHub repository.
+
+## 14. Trademark Disclaimer
+
+WhatsApp Privacy Guard is an independent third-party Microsoft Edge extension.
+
+It is not affiliated with, sponsored by, or endorsed by WhatsApp or Meta Platforms, Inc.
 
 "WhatsApp" is a trademark of Meta Platforms, Inc.
 
 ---
+
+**Privacy principle:** WhatsApp Privacy Guard is designed to keep WhatsApp content processing inside the user's browser and does not intentionally send WhatsApp content to external servers or third parties.
+:::
