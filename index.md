@@ -1,4 +1,3 @@
-:::writing{variant="document" id="61427" title="Privacy Policy — WhatsApp Privacy Guard"}
 # Privacy Policy — WhatsApp Privacy Guard
 
 **Last Updated: August 19, 2026**
@@ -136,4 +135,3 @@ It is not affiliated with, sponsored by, or endorsed by WhatsApp or Meta Platfor
 ---
 
 **Privacy principle:** WhatsApp Privacy Guard is designed to keep WhatsApp content processing inside the user's browser and does not intentionally send WhatsApp content to external servers or third parties.
-:::
